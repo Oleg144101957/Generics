@@ -23,6 +23,8 @@ Grocery("Ice cream", "Frozen", "Pack", 3.0, 2)
     val sumOfInput = input.fold(""){str, item -> str + item }
     println(sumOfInput)
 
+    println(groceries.fold(50.0){amount, item -> amount - item.unitPrice*item.quantity})
+
 
 
 
